@@ -1,3 +1,5 @@
+'use strict';
+require('@instana/collector')();
 const path = require("path");
 
 const streamableAxios = require("./streamableAxios");
