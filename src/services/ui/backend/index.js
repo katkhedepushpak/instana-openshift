@@ -1,5 +1,11 @@
 'use strict';
 require('@instana/collector')();
+import logger from "./logger";
+import instana from "@instana/collector"
+
+const instanaCollector = instana();
+instanaCollector.setLogger(logger);
+
 const path = require("path");
 
 const streamableAxios = require("./streamableAxios");
