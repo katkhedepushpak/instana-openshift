@@ -2,8 +2,7 @@
 require('@instana/collector')();
 
 
-const instanaCollector = instana();
-instanaCollector.setLogger(logger);
+
 
 const path = require("path");
 
