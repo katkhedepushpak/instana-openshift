@@ -46,7 +46,7 @@ docker push ${DOCKERHUB_NAME}/ui:latest
 
 oc apply -f config/oc-project.yaml
 sleep 2s
-oc project bee-travels-v3
+oc project bee-travels-v4
 
 sed "s/\${DOCKERHUB_NAME}/${DOCKERHUB_NAME}/" config/destination-v1-deploy.yaml > config/destination-v1-deploy-temp.yaml
 oc apply -f config/destination-v1-deploy-temp.yaml -f config/destination-v1-service.yaml
