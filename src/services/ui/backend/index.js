@@ -6,6 +6,9 @@ require('@instana/collector')();
 
 const path = require("path");
 
+//Config for datadog tracer
+const tracer = require('dd-trace').init()
+
 const streamableAxios = require("./streamableAxios");
 
 const infoCollector = require("./info-collector");

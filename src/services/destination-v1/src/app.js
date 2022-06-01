@@ -16,6 +16,9 @@ import instana from "@instana/collector"
 const instanaCollector = instana();
 instanaCollector.setLogger(logger);
 
+//Config for datadog tracer
+const tracer = require('dd-trace').init()
+
 const app = express();
 
 // Setup Pino.
