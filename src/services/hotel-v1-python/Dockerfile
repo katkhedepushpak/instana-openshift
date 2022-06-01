@@ -18,4 +18,4 @@ RUN npm install -g npx; npm install -g openapi-comment-parser
 
 EXPOSE 9101
 
-CMD ["python3", "run.py"]
+CMD ["ddtrace-run", "python3", "run.py"]

@@ -19,8 +19,12 @@ instanaCollector.setLogger(logger);
 
 const app = express();
 
+//Config for datadog tracer
+const tracer = require('dd-trace').init()
+
 // Setup Pino.
 app.use(logger);
+
 
 // Prometheus metrics collected for all service api endpoints
 app.use("/api", prometheus);
